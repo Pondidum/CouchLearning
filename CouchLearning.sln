@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionLogger", "ActionLogger\ActionLogger.csproj", "{DB4EBB7B-334A-4344-8921-02265BDFB75A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApplication", "UserApplication\UserApplication.csproj", "{7FA2E66D-08FC-4E94-AA7D-2B0C806A287D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB4EBB7B-334A-4344-8921-02265BDFB75A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB4EBB7B-334A-4344-8921-02265BDFB75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB4EBB7B-334A-4344-8921-02265BDFB75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB4EBB7B-334A-4344-8921-02265BDFB75A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FA2E66D-08FC-4E94-AA7D-2B0C806A287D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA2E66D-08FC-4E94-AA7D-2B0C806A287D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA2E66D-08FC-4E94-AA7D-2B0C806A287D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA2E66D-08FC-4E94-AA7D-2B0C806A287D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
