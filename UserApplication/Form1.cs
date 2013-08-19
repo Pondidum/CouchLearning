@@ -11,19 +11,33 @@ using ActionLogger;
 
 namespace UserApplication
 {
-	public partial class Form1 : Form
-	{
+    public partial class Form1 : Form
+    {
 
-		private static IActionLogger Log = LogManager.GetLogger();
+        private static IActionLogger Log = LogManager.GetLogger();
 
-		public Form1()
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnWrite_Click(object sender, EventArgs e)
 		{
-			InitializeComponent();
-		}
+			//Log.Store("btnWrite");
+            var random = new Random();
+            var now = DateTime.Now;
 
-		private void btnWrite_Click(object sender, EventArgs e)
-		{
-			Log.Store("btnWrite");
+            for (int i = 0; i < 100; i++)
+            {
+                var mins = random.Next(0, 100);
+                var data = new Dictionary<String, Object>();
+
+                data["-created"] = now.AddMinutes(mins);
+                data["count"] = i;
+                data["mins"] = mins;
+
+                Log.Store("btnWrite", data);
+            }
 		}
-	}
+    }
 }

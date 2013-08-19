@@ -1,0 +1,2 @@
+﻿<viewdata model = "Dashboard.Features.Home.HomeViewModel" />
+<h1>Hello ${Model.Message}</h1>
