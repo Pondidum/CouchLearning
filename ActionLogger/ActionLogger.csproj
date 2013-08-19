@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CouchActionLog.cs" />
+    <Compile Include="CouchActionLogger.cs" />
     <Compile Include="CouchCommunicator.cs" />
-    <Compile Include="IActionLog.cs" />
+    <Compile Include="IActionLogger.cs" />
     <Compile Include="LogManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -6,12 +6,12 @@ using Newtonsoft.Json;
 
 namespace ActionLogger
 {
-	public class CouchActionLog : IActionLog
+	public class CouchActionLogger : IActionLogger
 	{
 		private readonly CouchCommunicator _couch;
 		private readonly IDictionary<string, object> _empty;
 
-		public CouchActionLog(Uri url, string db)
+		public CouchActionLogger(Uri url, string db)
 		{
 			_couch = new CouchCommunicator(url, db);
 			_empty = new Dictionary<string, object>();

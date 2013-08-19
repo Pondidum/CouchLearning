@@ -14,7 +14,7 @@ namespace UserApplication
 	public partial class Form1 : Form
 	{
 
-		private static IActionLog Log = LogManager.GetLogger();
+		private static IActionLogger Log = LogManager.GetLogger();
 
 		public Form1()
 		{

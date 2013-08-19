@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace ActionLogger
 {
-	public interface IActionLog
+	public interface IActionLogger
 	{
 		void Store(string action);
 		void Store(string action, IDictionary<string, object> data);

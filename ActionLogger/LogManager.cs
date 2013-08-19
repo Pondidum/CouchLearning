@@ -4,14 +4,14 @@ namespace ActionLogger
 {
 	public class LogManager
 	{
-		private static Lazy<IActionLog> _logger;
+		private static Lazy<IActionLogger> _logger;
 
-		public static void Initialise(Func<IActionLog> createLogger)
+		public static void Initialise(Func<IActionLogger> createLogger)
 		{
-			_logger = new Lazy<IActionLog>(createLogger);
+			_logger = new Lazy<IActionLogger>(createLogger);
 		}
 
-		public static IActionLog GetLogger()
+		public static IActionLogger GetLogger()
 		{
 			return _logger.Value;
 		}

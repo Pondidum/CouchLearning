@@ -16,7 +16,7 @@ namespace UserApplication
 		static void Main()
 		{
 
-			LogManager.Initialise(() => new CouchActionLog(new Uri("http://127.0.0.1:5984"), "demo"));
+			LogManager.Initialise(() => new CouchActionLogger(new Uri("http://127.0.0.1:5984"), "demo"));
 
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
