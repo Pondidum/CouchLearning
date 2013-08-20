@@ -24,11 +24,11 @@ namespace ActionLogger
 
 		public void Store(string action, IDictionary<string, object> data)
 		{
-			data["-action"] = action;
+			data["action"] = action;
 
-            if (data.ContainsKey("-created") == false)
+            if (data.ContainsKey("created") == false)
             {
-                data["-created"] = DateTime.Now;
+                data["created"] = DateTime.Now;
             }
 
 			//fix dictionary key starting with '_'
